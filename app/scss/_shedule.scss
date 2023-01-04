@@ -1,0 +1,163 @@
+#shedule{
+  th{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: $light-text-color;
+    text-align: center;
+    height: 99px;
+    background-image: url(../img/shedule-header2.svg)!important;
+    background-size: cover;
+    padding-top: 18px;
+    vertical-align: baseline;
+    width: 210px;
+    height: 99px;
+    @media (max-width: 992px){
+        background-image: url(../img/shedule-header.svg)!important;
+    }
+    @media (max-width: 576px){
+        background-image: url(../img/shedule-header3.svg)!important;
+    }
+  }
+  table{
+    border-collapse: separate;
+    border-spacing: 30px 0;
+  //  padding: 0.2rem;
+    border: 0px;
+  }
+  tr, th, td{
+    background: #EFF1FA;
+    border: 0px;
+
+    //  max-width: 190px;
+  }
+  td{
+  padding: 20px 0;
+  }
+  p{
+    //font-size: calc(8px + 6 * (100vw / 1920));
+    font-size: 14px;
+    font-weight: 400;
+  }
+  h1{
+    margin: 80px 106px 32px auto;
+    @media (max-width: 992px){
+        margin: 80px 28px 70px auto;
+    }
+    @media (max-width: 576px){
+          margin: 60px 14px 40px auto;
+    }
+  }
+  h5{
+    margin-top: 30px;
+    margin-bottom: 45px;
+    @media (min-width: 1500px) and (max-width: 1700px){
+      margin-top: 20px;
+      margin-bottom: 35px;
+    }
+    @media (min-width: 834px) and (max-width: 1500px){
+      margin-top: 10px;
+      margin-bottom: 25px;
+      font-size: 16px!important;
+    }
+  }
+
+}
+
+
+.shedule-day-y{
+@include shedule-card(#F8EC24, #405999);
+}
+.shedule-day-c{
+@include shedule-card(#71AEB7, #F7F9FD);
+}
+.shedule-day-b{
+@include shedule-card(#32415C, #F7F9FD);
+}
+.shedule-day-r{
+@include shedule-card(#DAA6C5, #F7F9FD);
+}
+
+
+/* Style the tab */
+
+.tab {
+  overflow: hidden;
+//  display: inline-block;
+  //overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 43px;
+  padding-right: 102px;
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+  li {
+    list-style: none;
+  }
+  @media(max-width: 992px){
+    margin-bottom: 60px;
+    padding: 0 27px;
+    overflow: scroll;
+    justify-content: inherit;
+  }
+  @media(max-width: 567px){
+    margin-bottom: 43px;
+    padding: 0
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none;
+  &::-webkit-scrollbar {
+      display: none!important;
+      width: 0;
+      height: 0;
+    }
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  font-size: 20px;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 40px;
+  transition: 0.3s;
+  border-bottom: 3px solid #C4C4C4;
+  text-transform: uppercase;
+  @media (max-width: 992px){
+    padding: 15px 58px;
+  }
+  @media (max-width: 576px){
+    font-size: 18px;
+    padding: 15px 44px;
+  }
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: $light-text-color;
+  font-weight: 900;
+  border-bottom: 10px solid $light-text-color;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: $light-text-color;
+  font-weight: 900;
+  border-bottom: 10px solid $light-text-color;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  @media (max-width: 1400px){
+        padding: 0px 0px;
+        overflow: scroll;
+  }
+}

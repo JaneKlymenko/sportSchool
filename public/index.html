@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="sidenav h-100" id="sidenav">
+    <span id="closeMenu" onclick="CloseMenu()">&times;</span>
+    <img  onclick="window.location.href = 'index.html';" src="img/logo.svg" alt="logo" id="logo">
+    <a href="#main" onclick="toggle(document.getElementById('sidenav'))">ГОЛОВНА</a>
+    <a href="#section" onclick="toggle(document.getElementById('sidenav'))">СЕКЦІЇ</a>
+    <a href="#coaches" onclick="toggle(document.getElementById('sidenav'))">ТРЕНЕРИ</a>
+    <a href="#shedule" onclick="toggle(document.getElementById('sidenav'))">РОЗКЛАД</a>
+    <a href="#training" onclick="toggle(document.getElementById('sidenav'))">ТРЕНУВАННЯ</a>
+    <a href="#faq" onclick="toggle(document.getElementById('sidenav'))">FAQ</a>
+    <a href="#contacts"onclick="toggle(document.getElementById('sidenav'))">КОНТАКТИ</a>
+    <hr>
+    <div class="social">
+        <a href="#"><div><img src="img/social-ic/yt.svg" alt=""></div></a>
+        <a href="#"><div><img src="img/social-ic/fb.svg" alt=""></div></a>
+        <a href="#"><div><img src="img/social-ic/inst.svg" alt=""></div></a>
+    </div>
+  </div>
+  <div class="wrapper">
+      <!--HEADER-->
+      <div class="header-block">
+        <button class="mobile-menu" onclick="mob_menu()"><img src="img/menu.svg" alt=""></button>
+        <div class="row" id="main">
+          <div class="header-text">
+            <h2>ФЕДЕРАЦІЯ РУКОПАШНОГО БОЮ</h2>
+            <p> м. Кропивницький</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about col-12 col-lg-6">
+            <h4>ПРО НАС </h4>
+            <p>Понад 600 юних бійців з 20 областей України змагалися за перемогу на Чемпіонаті України з рукопашного бою серед учнів, що відбувся 20 лютого в Києві...</p>
+          </div>
+          <div class="col-12 col-lg-6 header-video-block">
+            <div class="header-video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/o2aVE0V2YOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          </div>
+        </div>
+      </div>
+      <!--SPORT SECTIONS-->
+      <div class="row align-items-start sport-sections" id="section">
+        <div class="desctop-sections">
+          <div class="container">
+            <div class="row"><h1>СЕКЦІЇ</h1></div>
+            <div class="row"><h2>Спортивна програма рукопашного бою</h2></div>
+            <div class="row">
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>РУХЛИВІ ІГРИ</h4><img src="./img/section-bg/bg-1.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>КРОСОВА ПІДГОТОВКА</h4><img src="./img/section-bg/bg-2.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>ПСИХО-ПЕДАГОГІЧНА ПІДГОТОВКА</h4><img src="./img/section-bg/bg-3.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>ПСИХО-ВОЛЬОВА ПІДГОТОВКА</h4><img src="./img/section-bg/bg-4.png" alt=""><div class='hover-img'></div></div></div>
+
+
+              <div class="col-sm-6 col-xl-4 col-xxl-3"> <div class="item"><h4>ГІМНАСТИКА</h4><img src="./img/section-bg/bg-5.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>ЗАГАЛЬНО ФІЗИЧНА ПІДГОТОВКА</h4><img src="./img/section-bg/bg-6.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>АКРОБАТИКА</h4><img src="./img/section-bg/bg-7.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>СПЕЦІАЛЬНА АКРОБАТИКА</h4><img src="./img/section-bg/bg-8.png" alt=""><div class='hover-img'></div></div></div>
+
+
+              <div class="col-sm-6 col-xl-4 col-xxl-3"> <div class="item"><h4>СПЕЦІАЛЬНА ФІЗИЧНА ПІДГОТОВКА</h4><img src="./img/section-bg/bg-1.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>БАЗОВА ТЕХНІКА</h4><img src="./img/section-bg/bg-2.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>УДАРНА ТЕХНІКА</h4><img src="./img/section-bg/bg-3.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>КИДКОВА ТЕХНІКА</h4><img src="./img/section-bg/bg-4.png" alt=""><div class='hover-img'></div></div></div>
+
+
+              <div class="col-sm-6 col-xl-4 col-xxl-3"> <div class="item"><h4>НИЗЬКИЙ ТА ВИСОКИЙ партер</h4><img src="./img/section-bg/bg-5.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>РОЗДІЛ САМООБОРОНИ</h4><img src="./img/section-bg/bg-6.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>I ТУР РУКОПАШНОГО БОЮ</h4><img src="./img/section-bg/bg-7.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>КОНТФАІКТОЛОГІЯ</h4><img src="./img/section-bg/bg-8.png" alt=""><div class='hover-img'></div></div></div>
+
+              <div class="col-sm-6 col-xl-4 col-xxl-3"> <div class="item"><h4>ЛЕГКИЙ КОНТАКТ</h4><img src="./img/section-bg/bg-1.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>ДОЗОВАНИЙ КОНТАКТ</h4><img src="./img/section-bg/bg-2.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>УЧБОВО-ТРЕНУВАЛЬНІ ЗБОРИ ЗА ПРОГРАМОЮ САМОЗБЕРЕЖЕННЯ ТА ВИЖИВАННЯ</h4><img src="./img/section-bg/bg-3.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>АТЕСТАЦІЯ</h4><img src="./img/section-bg/bg-4.png" alt=""><div class='hover-img'></div></div></div>
+          </div>
+          <div class="row"><h2>Прикладний розділ рукопашного бою</h2></div>
+            <div class="row">
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>СПЕЦІАЛЬНИЙ КУРС РУКОПАШНОГО БОЮ</h4><img src="./img/section-bg/bg-6.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"> <div class="item"><h4>ПІДРУЧНІ ТА СПЕЦІАЛЬНІ ЗАСОБИ. ХОЛОДНА ТА ВОГНЕПАЛЬНА ЗБРОЯ</h4><img src="./img/section-bg/bg-5.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>СПОСТЕРЕЖЕННЯ, ТОПОГРАФІЯ. ОРІЄНТУВАННЯ</h4><img src="./img/section-bg/bg-7.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>УСКЛАДНЕНА СМУГА ПЕРЕШКОД. МАСКУВАННЯ</h4><img src="./img/section-bg/bg-8.png" alt=""><div class='hover-img'></div></div></div>
+
+              <div class="col-sm-6 col-xl-4 col-xxl-3"> <div class="item"><h4>СПОСОБИ ВИЖИВАННЯ. ШВИДКІСНЕ ПЕРЕМІЩЕННЯ</h4><img src="./img/section-bg/bg-1.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>ПСИХО-ВОЛЬОВА-МЕДИЧНА ПІДГОТОВКА</h4><img src="./img/section-bg/bg-2.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>ТАКТИКО-СПЕЦІАЛЬНА ПІДГОТОВКА. ЖЕСТИКУЛЯЦІЯ</h4><img src="./img/section-bg/bg-3.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>ВИБУХОВІ ЗАСОБИ</h4><img src="./img/section-bg/bg-4.png" alt=""><div class='hover-img'></div></div></div>
+
+              <div class="col-sm-6 col-xl-4 col-xxl-3"> <div class="item"><h4>I ТУР РУКОПАШНОГО БОЮ ЗІ ЗБРОЄЮ</h4><img src="./img/section-bg/bg-5.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>МОДЕЛЮВАННЯ СИТУАЦІЙ ТА ЗАВДАНЬ</h4><img src="./img/section-bg/bg-6.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>УЧБОВО-ТРЕНУВАЛЬНІ ЗБОРИ. СКЛАДАННЯ ІСПИТІВ. АТЕСТАЦІЯ</h4><img src="./img/section-bg/bg-7.png" alt=""><div class='hover-img'></div></div></div>
+              <div class="col-sm-6 col-xl-4 col-xxl-3"><div class="item"><h4>ЗМАГАННЯ З ПРИКЛАДНОГО РОЗДІЛУ</h4><img src="./img/section-bg/bg-8.png" alt=""><div class='hover-img'></div></div></div>
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="sections-mobile">
+        <div class="col-lg-3 col-sm-12">
+          <h1>СЕКЦІЇ</h1>
+        </div>
+        <div class="row"><h2>Спортивна програма рукопашного бою</h2></div>
+        <div class="col-lg-9 col-sm-12 overflow-h">
+          <div id="sport-sections-carousel" class="owl-carousel owl-theme" >
+              <div class="item"><h4>РУХЛИВІ ІГРИ</h4><img src="./img/section-bg/bg-1.png" alt=""></div>
+              <div class="item"><h4>КРОСОВА ПІДГОТОВКА</h4><img src="./img/section-bg/bg-2.png" alt=""></div>
+              <div class="item"><h4>ПСИХО-ПЕДАГОГІЧНА ПІДГОТОВКА</h4><img src="./img/section-bg/bg-3.png" alt=""></div>
+              <div class="item"><h4>ПСИХО-ВОЛЬОВА ПІДГОТОВКА</h4><img src="./img/section-bg/bg-4.png" alt=""></div>
+              <div class="item"><h4>гімнастика</h4><img src="./img/section-bg/bg-5.png" alt=""></div>
+              <div class="item"><h4>ЗАГАЛЬНО ФІЗИЧНА ПІДГОТОВКА</h4><img src="./img/section-bg/bg-6.png" alt=""></div>
+              <div class="item"><h4>АКРОБАТИКА</h4><img src="./img/section-bg/bg-7.png" alt=""></div>
+              <div class="item"><h4>СПЕЦІАЛЬНА АКРОБАТИКА</h4><img src="./img/section-bg/bg-8.png" alt=""></div>
+              <div class="item"><h4>СПЕЦІАЛЬНА ФІЗИЧНА ПІДГОТОВКА</h4><img src="./img/section-bg/bg-5.png" alt=""></div>
+              <div class="item"><h4>КИДКОВА ТЕХНІКА </h4><img src="./img/section-bg/bg-6.png" alt=""></div>
+              <div class="item"><h4>НИЗЬКИЙ ТА ВИСОКИЙ партер</h4><img src="./img/section-bg/bg-7.png" alt=""></div>
+              <div class="item"><h4>РОЗДІЛ САМООБОРОНИ</h4><img src="./img/section-bg/bg-8.png" alt=""></div>
+              <div class="item"><h4>I ТУР РУКОПАШНОГО БОЮ</h4><img src="./img/section-bg/bg-1.png" alt=""></div>
+              <div class="item"><h4>РОЗДІЛ САМООБОРОНИ</h4><img src="./img/section-bg/bg-2.png" alt=""></div>
+              <div class="item"><h4>ПСИХО-ПЕДАГОГІЧНА ПІДГОТОВКА</h4><img src="./img/section-bg/bg-3.png" alt=""></div>
+              <div class="item"><h4>КОНТФАІКТОЛОГІЯ</h4><img src="./img/section-bg/bg-4.png" alt=""></div>
+              <div class="item"><h4>ЛЕГКИЙ КОНТАКТ</h4><img src="./img/section-bg/bg-5.png" alt=""></div>
+              <div class="item"><h4>ДОЗОВАНИЙ КОНТАКТ</h4><img src="./img/section-bg/bg-6.png" alt=""></div>
+              <div class="item"><h4>УЧБОВО-ТРЕНУВАЛЬНІ ЗБОРИ ЗА ПРОГРАМОЮ САМОЗБЕРЕЖЕННЯ ТА ВИЖИВАННЯ</h4><img src="./img/section-bg/bg-7.png" alt=""></div>
+              <div class="item"><h4>атестація</h4><img src="./img/section-bg/bg-8.png" alt=""></div>
+          </div>
+        </div>
+        <div class="navigation mobile col-sm-4 col-8"></div>
+
+          <div class="row"><h2>Прикладний розділ рукопашного бою</h2></div>
+          <div id="sport-sections-carousel-two" class="owl-carousel owl-theme" >
+            <div class="item"><h4>СПЕЦІАЛЬНИЙ КУРС РУКОПАШНОГО БОЮ</h4><img src="./img/section-bg/bg-1.png" alt=""></div>
+            <div class="item"><h4>ПІДРУЧНІ ТА СПЕЦІАЛЬНІ ЗАСОБИ. ХОЛОДНА ТА ВОГНЕПАЛЬНА ЗБРОЯ</h4><img src="./img/section-bg/bg-2.png" alt=""></div>
+            <div class="item"><h4>СПОСТЕРЕЖЕННЯ, ТОПОГРАФІЯ. ОРІЄНТУВАННЯ</h4><img src="./img/section-bg/bg-3.png" alt=""></div>
+            <div class="item"><h4>УСКЛАДНЕНА СМУГА ПЕРЕШКОД. МАСКУВАННЯ</h4><img src="./img/section-bg/bg-4.png" alt=""></div>
+            <div class="item"><h4>СПОСОБИ ВИЖИВАННЯ. ШВИДКІСНЕ ПЕРЕМІЩЕННЯ</h4><img src="./img/section-bg/bg-5.png" alt=""></div>
+            <div class="item"><h4>ПСИХО-ВОЛЬОВА-МЕДИЧНА ПІДГОТОВК</h4><img src="./img/section-bg/bg-6.png" alt=""></div>
+            <div class="item"><h4>ТАКТИКО-СПЕЦІАЛЬНА ПІДГОТОВКА. ЖЕСТИКУЛЯЦІЯ</h4><img src="./img/section-bg/bg-7.png" alt=""></div>
+            <div class="item"><h4>ВИБУХОВІ ЗАСОБИ</h4><img src="./img/section-bg/bg-8.png" alt=""></div>
+            <div class="item"><h4>I ТУР РУКОПАШНОГО БОЮ ЗІ ЗБРОЄЮ</h4><img src="./img/section-bg/bg-1.png" alt=""></div>
+            <div class="item"><h4>МОДЕЛЮВАННЯ СИТУАЦІЙ ТА ЗАВДАНЬ</h4><img src="./img/section-bg/bg-2.png" alt=""></div>
+            <div class="item"><h4>УЧБОВО-ТРЕНУВАЛЬНІ ЗБОРИ. СКЛАДАННЯ ІСПИТІВ. АТЕСТАЦІЯ</h4><img src="./img/section-bg/bg-3.png" alt=""></div>
+            <div class="item"><h4>ЗМАГАННЯ З ПРИКЛАДНОГО РОЗДІЛУ</h4><img src="./img/section-bg/bg-4.png" alt=""></div>
+          </div>
+          <div class="navigation-two mobile col-sm-4 col-8"></div>
+          </div>
+        </div>
+
+      <!--COACHES-->
+      <div class="coaches" id="coaches">
+        <div  class="coaches-txt col-12 col-sm-12 col-xl-5">
+          <h1>Тренери</h1>
+          <p>Ми — єдина команда з єдиними підходами та цілями в роботі!</p><p>Досвід, накопичений за роки, був покладений на розробку унікальної методики побудови та проведення тренувань.</p>
+        </div>
+          <div id="coaches-carousel" class="carousel-pos  owl-carousel owl-theme">
+            <div class="item coaches-carousel">
+              <div class="carousel-about-coach">
+                <h4>ІВАНОВ</h4>
+                <h4 class="name">Ігор Михайлович</h4>
+                <p>10.09.1960</p>
+                <p>Президент кіровоградської обласної Федерації з рукопашного бою, вища освіта</p>
+              </div>
+              <div class="coaches-carousel-img"><img src="img/coach2.png" alt=""></div>
+            </div>
+            <div class="item coaches-carousel">
+              <div class="carousel-about-coach">
+                <h4>Сібігатуліна</h4>
+                <h4 class="name">Кіра Володимирівна</h4>
+                <p>21.02.2006</p>
+                <p>Тренер рукопашного бою, середня освіта</p>
+              </div>
+              <div class="coaches-carousel-img"><img src="img/coach1.png" alt=""></div>
+            </div>
+            <div class="item coaches-carousel">
+              <div class="carousel-about-coach">
+                <h4>ПОЛІЩУК</h4>
+                <h4 class="name">Яна Миколаївна</h4>
+                <p>21.03.2004</p>
+                <p>Тренер рукопашного бою, середньо-спеціальна освіта</p>
+              </div>
+              <div class="coaches-carousel-img"><img src="img/coach1.png" alt=""></div>
+            </div>
+
+            <div class="item coaches-carousel">
+              <div class="carousel-about-coach">
+                <h4>Кашпуровський</h4>
+                <h4 class="name">Олександр Миколайович</h4>
+                <p>13.03.1969</p>
+                <p>Тренер рукопашного бою, вища освіта</p>
+              </div>
+              <div class="coaches-carousel-img"><img src="img/coach2.png" alt=""></div>
+            </div>
+            <div class="item coaches-carousel">
+              <div class="carousel-about-coach">
+                <h4>Кашпуровський</h4>
+                <h4 class="name">Ігор Олександрович</h4>
+                <p>12.07.1995</p>
+                <p>Тренер рукопашного бою, вища освіта</p>
+              </div>
+              <div class="coaches-carousel-img"><img src="img/coach2.png" alt=""></div>
+            </div>
+            <div class="item coaches-carousel">
+              <div class="carousel-about-coach">
+                <h4>Шиляєв</h4>
+                <h4 class="name">Данило Олександрович</h4>
+                <p>14.06.2004</p>
+                <p>Інструктор рукопашного бою, середня освіта</p>
+              </div>
+              <div class="coaches-carousel-img"><img src="img/coach2.png" alt=""></div>
+            </div>
+            <div class="item coaches-carousel">
+              <div class="carousel-about-coach">
+                <h4>Геращенко</h4>
+                <h4 class="name">Дмитро</h4>
+              </div>
+              <div class="coaches-carousel-img"><img src="img/coach2.png" alt=""></div>
+            </div>
+            <div class="item coaches-carousel">
+              <div class="carousel-about-coach">
+                <h4>Бурдій</h4>
+                <h4 class="name">Олександр</h4>
+              </div>
+              <div class="coaches-carousel-img"><img src="img/coach2.png" alt=""></div>
+            </div>
+            <div class="item coaches-carousel">
+              <div class="carousel-about-coach">
+                <h4>Заворуєв</h4>
+                <h4 class="name">Владислав Андрійович</h4>
+                <p>25.11.2008</p>
+              </div>
+              <div class="coaches-carousel-img"><img src="img/coach2.png" alt=""></div>
+            </div>
+            <div class="item coaches-carousel">
+              <div class="carousel-about-coach">
+                <h4>Терещенко</h4>
+                <h4 class="name">Дмитро</h4>
+                <p>Інструктор рукопашного бою</p>
+              </div>
+              <div class="coaches-carousel-img"><img src="img/coach2.png" alt=""></div>
+            </div>
+          </div>
+          <div class="coaches-navigation"></div>
+      </div>
+
+      <!--WHY WE -->
+      <div class="row align-items-start why-we">
+        <div class="col-lg-3 col-sm-12 whywe-title">
+          <h1>чому</h1>
+          <h1>ми?</h1>
+          <div class="whywenavigation desctop">
+          </div>
+        </div>
+        <div class="col-lg-9 col-sm-12 overflow-h">
+          <div id="whywe-sections-carousel" class="owl-carousel owl-theme">
+              <div class="item"><h1>01</h1><img src="./img/whywe-bg.png" alt=""><h5>ЛІДЕР СЕРЕД СПОРТИВНИХ ШКІЛ КРОПИВНИЦКОГО</h5><div class='hover-img'></div></div>
+              <div class="item"><h1>02</h1><img src="./img/whywe-bg.png" alt=""><h5>СЕКЦІЇ НЕ ТІЛЬКИ ДЛЯ ДОРОСЛИХ, А І ДЛЯ ДІТЕЙ</h5><div class='hover-img'></div></div>
+              <div class="item"><h1>03</h1><img src="./img/whywe-bg.png" alt=""><h5>МОЛОДІ ТА АКТИВНІ ТРЕНЕРИ</h5><div class='hover-img'></div></div>
+              <div class="item"><h1>04</h1><img src="./img/whywe-bg.png" alt=""><h5>РІЗНОРІВНЕВІ ТУРНІРИ, МІЖНАРОДНІ ТА ВСЕУКРАЇНСЬКІ</h5><div class='hover-img'></div></div>
+              <div class="item"><h1>05</h1><img src="./img/whywe-bg.png" alt=""><h5>ЦІНА - ЯКІСТЬ!</h5><div class='hover-img'></div></div>
+              <div class="item"><h1>06</h1><img src="./img/whywe-bg.png" alt=""><h5>Задоволення від кожного заняття</h5><div class='hover-img'></div></div>
+              <div class="item"><h1>07</h1><img src="./img/whywe-bg.png" alt=""><h5>Зручний графік тренувань</h5><div class='hover-img'></div></div>
+              <div class="item"><h1>08</h1><img src="./img/whywe-bg.png" alt=""><h5>Персональні програми тренувань</h5><div class='hover-img'></div></div>
+          </div>
+        </div>
+        <div class="whywenavigation mobile col-sm-4 col-8"></div>
+      </div>
+
+
+      <!--SHEDULE-->
+    <div id="shedule" class="shedule">
+      <h1 class="text-end">розклад занять</h1>
+      <div class="row tab-holder">
+        <div class="tab">
+          <button id="defaultOpen" class="tablinks" onclick="openShedule(event, 'SdeduleAll')">Усі</button>
+          <button class="tablinks" onclick="openShedule(event, 'SdeduleMan')">Чоловіки</button>
+          <button class="tablinks" onclick="openShedule(event, 'SdeduleWomam')">Жінки</button>
+          <button class="tablinks" onclick="openShedule(event, 'SdeduleChild')">Діти</button>
+        </div>
+      </div>
+
+      <div id="SdeduleAll" class="tabcontent">
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">понеділок</th>
+              <th scope="col">вівторок</th>
+              <th scope="col">середа</th>
+              <th scope="col">четвер</th>
+              <th scope="col">п'ятниця</th>
+              <th scope="col">субота</th>
+              <th scope="col">неділя</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="shedule-day-y">
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                    12:00-14:30</p>
+                <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                <p>Иван Иванов</p>
+              </div></td>
+              <td></td>
+              <td></td>
+              <td><div class="shedule-day-r">
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                    12:00-14:30</p>
+                <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                <p>Иван Иванов</p>
+              </div></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <tr>
+                <td><div class="shedule-day-c">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td><div class="shedule-day-b">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td><div class="shedule-day-y">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td></td>
+                <td></td>
+                <td><div class="shedule-day-b">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td><div class="shedule-day-b">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td></td>
+                <td><div class="shedule-day-c">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p></div></td>
+                <td></td>
+                <td><div class="shedule-day-b">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="SdeduleMan" class="tabcontent">
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">понеділок</th>
+              <th scope="col">вівторок</th>
+              <th scope="col">середа</th>
+              <th scope="col">четвер</th>
+              <th scope="col">п'ятниця</th>
+              <th scope="col">субота</th>
+              <th scope="col">неділя</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="shedule-day-y">
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                    12:00-14:30</p>
+                <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                <p>Иван Иванов</p>
+              </div></td>
+              <td></td>
+              <td>
+                <div class="shedule-day-b">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div>
+              </td>
+              <td><div class="shedule-day-r">
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                    12:00-14:30</p>
+                <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                <p>Иван Иванов</p>
+              </div></td>
+              <td></td>
+              <td><div class="shedule-day-r">
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                    12:00-14:30</p>
+                <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                <p>Иван Иванов</p>
+              </div></td>
+              <td>
+                <div class="shedule-day-b">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div>
+              </td>
+              <tr>
+                <td><div class="shedule-day-c">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td><div class="shedule-day-b">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td><div class="shedule-day-y">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td><div class="shedule-day-c">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td><div class="shedule-day-b">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td></td>
+                <td><div class="shedule-day-c">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p></div></td>
+                <td></td>
+                <td><div class="shedule-day-b">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="SdeduleWomam" class="tabcontent">
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">понеділок</th>
+              <th scope="col">вівторок</th>
+              <th scope="col">середа</th>
+              <th scope="col">четвер</th>
+              <th scope="col">п'ятниця</th>
+              <th scope="col">субота</th>
+              <th scope="col">неділя</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="shedule-day-y">
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                    12:00-14:30</p>
+                <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                <p>Иван Иванов</p>
+              </div></td>
+              <td></td>
+              <td></td>
+              <td><div class="shedule-day-r">
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                    12:00-14:30</p>
+                <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                <p>Иван Иванов</p>
+              </div></td>
+              <td></td>
+              <td><div class="shedule-day-r">
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                    12:00-14:30</p>
+                <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                <p>Иван Иванов</p>
+              </div></td>
+              <td></td>
+              <tr>
+                <td><div class="shedule-day-c">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td><div class="shedule-day-b">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td><div class="shedule-day-y">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td><div class="shedule-day-c">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td><div class="shedule-day-b">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td></td>
+                <td><div class="shedule-day-c">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p></div></td>
+                <td></td>
+                <td><div class="shedule-day-b">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="SdeduleChild" class="tabcontent">
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">понеділок</th>
+              <th scope="col">вівторок</th>
+              <th scope="col">середа</th>
+              <th scope="col">четвер</th>
+              <th scope="col">п'ятниця</th>
+              <th scope="col">субота</th>
+              <th scope="col">неділя</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="shedule-day-y">
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                    12:00-14:30</p>
+                <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                <p>Иван Иванов</p>
+              </div></td>
+              <td></td>
+              <td></td>
+              <td><div class="shedule-day-r">
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                    12:00-14:30</p>
+                <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                <p>Иван Иванов</p>
+              </div></td>
+              <td></td>
+              <td><div class="shedule-day-r">
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                    12:00-14:30</p>
+                <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                <p>Иван Иванов</p>
+              </div></td>
+              <td></td>
+              <tr>
+                <td><div class="shedule-day-c">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td><div class="shedule-day-b">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td><div class="shedule-day-y">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td><div class="shedule-day-c">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td></td>
+                <td><div class="shedule-day-r">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><div class="shedule-day-r">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td><div class="shedule-day-b">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+                <td></td>
+                <td><div class="shedule-day-c">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p></div></td>
+                <td></td>
+                <td><div class="shedule-day-b">
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                      12:00-14:30</p>
+                  <h5>НАЗВА ТРЕНУВАННЯ</h5>
+                  <p>Иван Иванов</p>
+                </div></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!--ACHIEVEMENTS -->
+      <div class="achievements">
+      <h1>Досягнення</h1>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-xl-4">
+          <div class="ind-ach row ">
+            <img src="./img/achievements/ach1.svg">
+              <div class="ach-num">
+                <span>20+</span>
+              </div>
+              <div class="ach-txt">
+                  <p>Найкращих тренерів</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4">
+          <div class="ind-ach row">
+            <img src="./img/achievements/ach2.svg">
+            <div class="ach-num-two">
+              <span>100+</span>
+            </div>
+            <div class="ach-txt">
+                <p>Випускників школи</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 align-self-center">
+          <div class="ind-ach row">
+            <img src="./img/achievements/ach3.svg">
+            <div class="ach-num-three">
+              <span>50+</span>
+            </div>
+            <div class="ach-txt">
+                <p>Переможців змагань</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+      <!--РОЗДІЛ ІНДИВІДУАЛЬНИЙ ПІДХІД -->
+      <div class="ind-approach" id="training">
+        <h1 class="text-end">ІНДИВІДУАЛЬНИЙ ПІДХІД ДО ТРЕНУВАНЬ</h1>
+
+          <div class="row ">
+            <div class="videotab ind-approach-videotab">
+              <button id="defaultOpenVideo" class="tablinksVideo" onclick="openIndivid(event, 'videocontent1')">Усі</button>
+              <button class="tablinksVideo" onclick="openIndivid(event, 'videocontent2')">Чоловіки</button>
+              <button class="tablinksVideo" onclick="openIndivid(event, 'videocontent3')">Жінки</button>
+              <button class="tablinksVideo" onclick="openIndivid(event, 'videocontent4')">Діти</button>
+            </div>
+          </div>
+          <section id="videocontent1">
+            <div class="video-wrapper">
+            <!--   <div  id="video-cover" class="cyan"></div>-->
+             <img  id="video-cover" src="./img/fone.svg" alt="Video title">
+             <iframe id="player" width="100%" height="550px" src="https://www.youtube.com/embed/o2aVE0V2YOo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+             <button id="play" class="play-btn">
+               <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M59 44L36.5 56.9904V31.0096L59 44Z" fill="white"/>
+               <path d="M6.39488 22.2887L44 0.57735L81.6051 22.2887V65.7113L44 87.4226L6.39488 65.7113V22.2887Z" stroke="white"/>
+               </svg>
+             </button>
+            </div>
+          </section>
+
+          <section id="videocontent2">
+            <div class="video-wrapper">
+            <!--   <div  id="video-cover" class="cyan"></div>-->
+             <img  id="video-cover-m" src="./img/man-video-fone.svg" alt="Video title">
+             <iframe id="player-m" width="100%" height="550px" src="https://www.youtube.com/embed/o2aVE0V2YOo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+             <button id="play-m" class="play-btn">
+               <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M59 44L36.5 56.9904V31.0096L59 44Z" fill="white"/>
+               <path d="M6.39488 22.2887L44 0.57735L81.6051 22.2887V65.7113L44 87.4226L6.39488 65.7113V22.2887Z" stroke="white"/>
+               </svg>
+             </button>
+            </div>
+          </section>
+
+          <section id="videocontent3">
+            <div class="video-wrapper">
+            <!--   <div  id="video-cover" class="cyan"></div>-->
+             <img  id="video-cover-w" src="./img/woman-video-fone.svg" alt="Video title">
+             <iframe id="player-w" width="100%" height="550px" src="https://www.youtube.com/embed/_J7QZ1BJ9OA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+             <button id="play-w" class="play-btn">
+               <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M59 44L36.5 56.9904V31.0096L59 44Z" fill="white"/>
+               <path d="M6.39488 22.2887L44 0.57735L81.6051 22.2887V65.7113L44 87.4226L6.39488 65.7113V22.2887Z" stroke="white"/>
+               </svg>
+             </button>
+            </div>
+          </section>
+
+          <section id="videocontent4">
+            <div class="video-wrapper">
+            <!--   <div  id="video-cover" class="cyan"></div>-->
+             <img  id="video-cover-c" src="./img/children-video-fone.svg" alt="Video title">
+             <iframe id="player-c" width="100%" height="550px" src="https://www.youtube.com/embed/KJ_2ibVCF3k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+             <button id="play-c" class="play-btn">
+               <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M59 44L36.5 56.9904V31.0096L59 44Z" fill="white"/>
+               <path d="M6.39488 22.2887L44 0.57735L81.6051 22.2887V65.7113L44 87.4226L6.39488 65.7113V22.2887Z" stroke="white"/>
+               </svg>
+             </button>
+            </div>
+          </section>
+        </div>
+
+
+    <!--FAQ -->
+      <div class="faq" id="faq">
+        <h1>FAQ</h1>
+        <div class="faq-accordion">
+          <button class="accordion"><p>Що таке рукопашний бій?</p></button>
+              <div class="panel">
+                <p>Рукопа́шний бій — термін, що має два значення. Перший (в широкому розумінні) бій між суперниками голіруч,
+                  лише з використанням можливостей тіла. Цей спосіб існує з найдавніших часів людства.
+                  Другий — бій з використанням холодної зброї (так звана «біла зброя»), обладунків та інших засобів окрім вогнепальної зброї.
+                </p>
+              </div>
+
+              <button class="accordion"><p>Які види рукопашного бою існують?</p></button>
+              <div class="panel">
+                <p>Рукопашний бій ділиться на 3 категорії:
+                  <ul>
+                    <li>
+                      Спортивний — вид з най обмеженішим арсеналом дій, вилучені прийоми, що можуть призвести до тяжкої травми або смерті супротивника.
+                      Використовується у підгодовці молодих бійців, розвиває основні, необхідні для перемоги, якості спортсмена — фізичну підготовку, координацію,
+                      відчуття дистанції, удари, кидки, боротьбу в партері, психологічну підготовку до бою.
+                    </li>
+                    <li>
+                      Поліцейський — вид створений для застосування органами
+                      міліції та поліції. Характеризується великою кількістю прийомів на утримання супротивника, конвоювання. Включає прийоми бою проти озброєного супротивника
+                      та бій з декількома супротивниками. З поліцейського рукопашного бою проводяться показові виступи.
+                    </li>
+                    <li>
+                      Армійський — вид, створений для спецпідрозділів армії. Акцент робиться на прийоми, що максимально ефективно ведуть
+                      до смерті супротивника. Викладання цих прийомів цивільному населенню заборонено і зараз у більшості секцій під маркою АРБ
+                      (армійський рукопашний бій) викладають саме спортивний рукопашний бій.
+                    </li>
+                  </ul>
+                  </p>
+              </div>
+
+              <button class="accordion"><p>Що дає рукопашний бій?</p></button>
+              <div class="panel">
+                <p>На сьогоднішній день існує велика кількість бойових та спортивних
+                   видів які активно існують та процвітають. За цих умов повстає логічне питання: Чому рукопашний бій?</p>
+                <p>Винятковість рукопашного бою - це його життєвість. Рукопашний бій на теренах нинішньої
+                  України існує в тій чи іншій формі скільки і люди які населяють цю землю, він є інстинктивно зрозумілим.
+                  Рукопашний бій – це вид, якій зародився і невпинно вдосконалюється на полях бою.</p>
+                <p>У ньому відсутні:
+                  <ul>
+                    <li>кіно елементи;</li>
+                    <li>удари, які неможливо виконати у критичний момент;</li>
+                    <li>заздалегідь продумані сценарії розвитку подій.</li>
+                  </ul>
+                </p>
+                <p>
+                  Головним критерієм є спроможністьлюдини впоратись з будь якою несподівано ситуацією.
+                  Людину яка знає рукопашний бій важко здивувати технічним арсеналом, адже
+                  правильна техніка вона завжди єдина, послідовна, логічна та закономірна.
+                  І при цьому не має суттєвої різниці яких розмірів нападник,
+                   чи його руки пусті, і якщо ні, то що він використовує як зброю.
+                 </p>
+                 <p>
+                   Вивчаючи рукопашний бій можливо освоїти техніку поводження з:
+                   вогнепальною та холодною зброєю, короткою та довгою палкою, і навіть хлистовою зброєю.
+                 </p>
+              </div>
+            </div>
+          </div>
+
+
+<button id="btnup" onclick="topFunction()">
+  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="60" height="60" fill="#017DC5"/>
+  <path d="M30 15L42.9904 37.5H17.0096L30 15Z" fill="white"/>
+  </svg>
+</button>
+
+      <!--FOOTER-->
+            <footer id="contacts">
+              <div class="desctop-footer">
+                <div class="row">
+                  <div class="col-sm-5 col-lg-6 col-12">
+                    Телефон: +38(044) 280-54-64
+                  </div>
+                  <div class="col-sm-7 col-lg-6 col-12 text-end">
+                    Рукопашний бій — спорт, який об’єднує!
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-5 col-lg-6 col-12 ">
+                    E-mail: frb@frb.org.ua
+                  </div>
+                  <div class="col-sm-7 col-lg-6 col-12 text-end">
+                    <small>©  LA&CoSolutions, усі права захищені, 2022</small>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile-footer">
+                  <div class="row">
+                    <p>Телефон: +38(044) 280-54-64</p>
+                    <p>E-mail: frb@frb.org.ua</p>
+                    <br><p></p><br>
+                  </div>
+                  <div class="row">
+                    <p>Рукопашний бій — спорт, який об’єднує!</p>
+                    <small>© LA&CoSolutions, усі права захищені, 2022</small>
+                  </div>
+              </div>
+            </footer>
+
+
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/mobmenu.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/shedule.js"></script>
+<script src="js/utubecustom.js"></script>
+<script src="js/accordeone.js"></script>
+<script src="js/ind.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/up.js"></script>
+</html>

@@ -1,0 +1,75 @@
+#whywe-sections-carousel{
+  padding-top: 40px;
+  .item{
+    overflow: visible;
+    margin-left: 12px;
+    h1{
+      position: absolute;
+      padding: 7%;
+      z-index: 1;
+      color: #FFF!important;
+    }
+    h5{
+      position: absolute;
+      top: 171px;
+    //  padding: 8%;
+      margin: 0px 22px 87px 22px;
+      z-index: 1;
+      color: #017DC5;
+    }
+    img{
+      position: relative;
+      z-index: 0;
+    }
+    transition: all 1s ease;
+    &:hover{
+        @include item-hover (rgba(64, 89, 153, 0.7));
+        h1, h5{
+          color: #FFF;
+        }
+        .hover-img{
+              opacity: 0.6;
+        }
+      }
+  }
+}
+.whywe-title{
+  padding: 20px;
+  margin-top: 50px;
+  text-align: center;
+  h1{
+    padding: 0 35%;
+  }
+  @media (max-width: 992px){
+    padding: 20px;
+    margin-top: 0;
+    margin-left: 30px;
+    text-align: left;
+    h1{
+      display:inline-block;
+      padding: 0;
+    }
+  }
+  @media (max-width: 992px){
+    padding-top: 60px;
+  }
+}
+.whywenavigation{
+  margin-top: 60px;
+  .owl-prev {
+    @include arrow-left;
+  }
+  .owl-next {
+    @include arrow-right;
+  }
+  @media (max-width: 992px){
+    margin-top: 52px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (max-width: 576px){
+    margin-top: 82px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

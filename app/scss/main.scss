@@ -1,0 +1,29 @@
+@import "mixins";
+@import "vars";
+@import "header-block";
+@import "coach";
+@import "achievements";
+@import "whywe";
+@import "shedule";
+@import "individual";
+@import "all-main-styles";
+@import "utube";
+
+.sport-sections, .coaches, .why-we, .shedule, .achievements, .ind-approach{
+  margin-top: 50px;
+  @media (min-width: 1500px) and (max-width: 1700px){
+    margin-top: 40px;
+  }
+  @media (min-width: 834px) and (max-width: 1500px){
+    margin-top: 30px;
+  }
+}
+
+
+.owl-carousel .owl-stage-outer {
+    overflow: visible;
+  }
+
+.overflow-h{
+    overflow: hidden;
+}

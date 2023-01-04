@@ -1,0 +1,79 @@
+.achievements{
+  h1{
+   margin: 30px auto 46px 113px;
+  }
+  margin-bottom: 120px;
+  @media (max-width: 992px){
+    h1{
+     margin: 30px auto 40px 12px;
+    }
+    margin-bottom: 80px;
+  }
+  @media (max-width: 557px){
+    h1{
+     margin: 61px auto 40px 15px;
+    }
+  }
+}
+
+
+.ind-ach{
+      position: relative;
+      padding: 0 15%;
+      img{
+        margin-top: 25%;
+        width: 150px;
+        height: auto;
+      }
+
+    span{
+    //  font-size: calc(40px + 40 * (100vw / 1920));
+      font-size: 80px;
+      font-weight: 900;
+      color: $dark-text-color;
+    }
+    p{
+      font-size: 24px;
+      font-weight: 400;
+      color: $dark-text-color;
+    }
+    .ach-num{
+     position: absolute;
+     left: 135px;
+     top:25px;
+    }
+    .ach-num-two{
+     position: absolute;
+     left: 145px;
+     top:25px;
+    }
+    .ach-num-three{
+     position: absolute;
+     left: 190px;
+     top:25px;
+    }
+    .ach-txt{
+     position: absolute;
+     left: 190px;
+     top:120px;
+     width: 150px;
+    }
+    @media (min-width: 1400px){
+      .ach-num{
+       left: 165px;
+       top:55px;
+      }
+      .ach-num-two{
+       left: 175px;
+       top:55px;
+      }
+      .ach-num-three{
+       left: 210px;
+       top:55px;
+      }
+      .ach-txt{
+       left: 210px;
+       top:160px;
+      }
+   }
+}

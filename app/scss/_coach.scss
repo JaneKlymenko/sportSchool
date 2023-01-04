@@ -1,0 +1,191 @@
+.coaches{
+  position: relative;
+  width: 100%;
+  //height:600px;
+  height: 65vh;
+  @media (max-width: 1200px){
+    height: 410px;
+  }
+  @media (max-width: 992px){
+      height: 728px;
+      margin-top: 0!important;
+  }
+  @media (max-width: 576px){
+    //  height: 120vh;
+      height: 842px;
+      margin-top: 0!important;
+  }
+}
+.coaches-txt{
+  padding-left: 7%;
+
+  @media (max-width: 992px){
+      margin: 10px 15px 0 15px;
+      padding: 5%;
+  }
+  @media (max-width: 576px){
+    margin: 0;
+    padding: 8%;
+    box-sizing: border-box;
+  }
+  p{
+    //font-size: calc(6px + 14 * (100vw / 1920))
+    font-size: 20px;
+    color: #405999;
+    font-weight: 400;
+    margin-bottom: 1px;
+    line-height: 1em;
+    @media (min-width: 1576px){
+      line-height: 24.38px;
+   }
+   @media (min-width: 993px) and (max-width: 1400px){
+     font-size: 16px;
+   }
+   @media (max-width: 992px){
+       line-height: 25px;
+       font-size: 20px;
+   }
+  }
+  h1{
+    margin: 0;
+    @media (max-width: 992px){
+      padding: 50px 0 15px 0;
+    }
+    @media (max-width: 576px){
+      padding: 60px 0 27px 0;
+    }
+  }
+}
+.name{
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-bottom: 10%;
+  @media (max-width: 3320px){
+      margin-bottom: 5%;
+  }
+}
+.carousel-pos{
+  position: absolute;
+  top:0;
+  width: 100%;
+//  height:100%;
+  overflow: hidden;
+  @media (max-width: 992px){
+    position: inherit;
+  }
+}
+.coaches-carousel{
+  position: relative;
+  //height: 600px;
+  height: 65vh;
+  width:100%;
+  overflow: hidden;
+  @media (max-width: 1200px){
+      height: 400px;
+  }
+  @media (max-width: 992px){
+      height: 451px;
+  }
+  @media (max-width: 576px){
+      height: 496px;
+  }
+}
+.carousel-about-coach{
+  position: absolute;
+  background-color: #13233C;
+  color: #FFF!important;
+  box-sizing:border-box;
+  height: 70%;
+  width: 52%;
+  bottom: 0;
+  padding: 5% 7%;
+  @media (min-width: 1500px) and (max-width: 1700px){
+    padding: 4% 8%;
+  }
+  @media (min-width: 834px) and (max-width: 1500px){
+    height: 65%;
+    padding: 3% 7%;
+  }
+  @media (max-width: 1200px){
+      width: 100%;
+    //  height: 90%;
+      padding: 5% 15% 3% 7%;
+  }
+  @media (max-width: 992px){
+        width: 100%;
+        height: 451px;
+        padding: 100px  87px;
+        position: inherit;
+         p{
+          padding-top: 30px;
+        }
+    }
+  @media (max-width: 576px){
+    height: 100%;
+    padding: 45px 42px 3% 43px;
+  }
+  z-index: 2;
+  h4{
+    color: #FFF;
+  }
+  p{
+    //font-size: calc(6px + 14 * (100vw / 1920));
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1px;
+    @media (min-width: 834px) and (max-width: 1500px){
+      font-size: 16px;
+   }
+  }
+  button{
+    @include button-blue;
+    position: absolute;
+    bottom: 3%;
+    left: 13%;
+      @media (max-width: 992px)
+      {
+        bottom: 15%;
+        left: 6%;
+      }
+      @media (max-width: 576px){
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+  }
+}
+.coaches-carousel-img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+//  height: 65vh;
+  width: 55%;
+  background-color: url(../img/coach1.png);
+  @media (max-width: 1200px){
+      width: 0px;
+  }
+}
+.coaches-navigation{
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  transform:translate(-50%, -50%);
+  z-index: 5;
+  .owl-prev {
+    @include arrow-left;
+  }
+  .owl-next {
+    @include arrow-right;
+  }
+  @media (max-width: 992px){
+      bottom: 35px;
+  }
+  @media (max-width: 576px){
+      left:20%;
+      transform:translate(0%, 0%);
+      bottom: 9%;
+  }
+  @media (max-width: 380px){
+      bottom: 10px;
+  }
+}
